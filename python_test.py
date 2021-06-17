@@ -1,7 +1,7 @@
 x=[100,110,120,130,140,150]
 for a in x:
-    [a*5 for a in x]
-    print(a*5)
+    m=[a*5 for a in x]
+print(m)
 
 def divisible_by_three(n):
     m=range(1,n)
@@ -12,11 +12,14 @@ divisible_by_three(10)
 
 def  flatterns():
     x=[[1,2],[3,4],[5,6]]
-    for a in x  b in x:
-        print(n)
-   
+    for a in x:
+        for b in a:
+            for b in x:
+                print(x)
+            # print(b)
+    #         print(a.join(b))
+    # print(x)
 flatterns()
-
 def smallest(*args):
     smallestNumber=min(args)
     print(smallestNumber)
